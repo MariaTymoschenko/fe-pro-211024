@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            display: none;
+        }
+        nav.active{
+            display: block;
+        }
+        .task6 .open{
+            display: block;
+        }
+        .task6 .close{
+            display: none;
+        }
+        .task6.active .open{
+            display: none;
+        }
+        .task6.active .close{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <button>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing.
+        </p>
+    </button>
+    <p class="task2">
+        Lorem, ipsum.
+    </p>
+    <button class="task3">
+        <p class="counter">
+            Lorem, ipsum dolor.
+        </p>
+    </button> <br>
+    <button class="task4">
+    </button>
+    <div class="blockContainer">
+        <button class="buttonfirst">1</button>
+        <button class="buttonsecond">2</button>
+        <button class="buttonthird">3</button>
+    </div>
+    <button class="task6">
+        Відкрити меню
+        <span class="open">
+            open
+        </span>
+        <span class="close">
+            close
+        </span>
+    </button>
+    <nav>
+        <a href="#">
+            Home
+        </a>
+        <a href="#">
+            About
+        </a>
+        <a href="#">
+            Contacts
+        </a>
+    </nav>
+    <script src="hw09.js"></script>
+</body>
+
+</html>

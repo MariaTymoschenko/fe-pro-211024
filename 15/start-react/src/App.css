@@ -1,0 +1,398 @@
+* {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  background-image: url("imgs/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 40px;
+}
+
+header {
+  color: rgb(200, 200, 200);
+  font-family: var(--font-family);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  justify-content: space-between;
+  display: flex;
+}
+
+.netflix-logo {
+  padding-right: 56px;
+}
+.border::after {
+  content: '';
+  display: inline-block;
+  height: 28px;
+  border: 2px solid var(--main-color);
+  top: 7px;
+  position: relative;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.top-header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.top-logo-bar {
+  padding-top: 70px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+}
+
+.date {
+  padding-left: 26px;
+  align-content: center;
+}
+
+.right-top-menu {
+  padding-top: 42px;
+  padding-right: 33px;
+  display: flex;
+  align-items: center;
+  max-width: 200px;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+}
+
+h2 {
+  color: var(--main-color);
+  font-family: var(--font-family);
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 144.52%;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+h1 {
+  color: var(--main-color);
+  font-family: var(--font-family);
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 77px;
+  letter-spacing: 5.5%;
+  text-align: left;
+  padding-bottom: 17px;
+}
+
+.desc-flex {
+  color: var(--main-color);
+  font-family: var(--font-family);
+  font-size: 29px;
+  font-weight: 400;
+  gap: 60px;
+  line-height: 0px;
+  letter-spacing: 0%;
+  text-align: left;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  display: flex;
+  max-width: 50%;
+}
+
+.white-text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  Font-size: 30px;
+  letter-spacing: 0%;
+  color: var(--main-color);
+}
+
+.gray-text {
+  color: var(--secondary-color);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 29px;
+  letter-spacing: 0%;
+}
+
+p {
+  color: var(--secondary-color);
+  font-family: var(--font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 52%;
+  padding-top: 8px;
+}
+
+.rating {
+  color: rgb(255, 234, 43);
+}
+
+.buttons {
+  display: flex;
+  gap: 90px;
+  justify-content: flex-start;
+  padding-top: 53px;
+  padding-bottom: 54px;
+}
+
+.stream {
+  border-radius: 10px;
+  background: rgb(213, 13, 31);
+  color: var(--main-color);
+  font-family: var(--font-family);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 141.52%;
+  letter-spacing: 0%;
+  text-align: center;
+  width: 272px;
+  height: 64px;
+}
+
+.episodes {
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 271px;
+  height: 64px;
+  color: var(--main-color);
+  background-color: transparent;
+  border: 3px solid var(--main-color);
+  font-family: var(--font-family);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 141.52%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.age-category {
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.49);
+  color: var(--main-color);
+  border-left: 30px solid rgb(213, 13, 31);
+  font-family: var(--font-family);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 141.52%;
+  letter-spacing: 0%;
+  text-align: center;
+  position: fixed;
+  right: 0;
+  bottom: 103px;
+}
+
+main {
+  width: 96%;
+}
+
+
+.slider {
+  width: 57%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.navigation {
+  display: flex;
+  align-self: center;
+  gap: 24px;
+}
+
+.slider-item {
+  width: 57%;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-bottom: 49px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-item img {
+  border: 1px solid var(--main-color);
+  width: 17%;
+}
+
+:root {
+  --main-color: rgb(255, 255, 255);
+  --secondary-color: rgb(167, 166, 166);
+  --font-family: "Inter", sans-serif;
+}
+button{
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 0;
+  height: 40px;
+  width: 40px;
+}
+
+@media screen and (max-width:900px) {
+  .top-header {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    background: linear-gradient(45deg, #0B0E15, #3D5768);
+    padding-bottom: 0;
+  }
+
+  h2 {
+    border: none;
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: 200;
+  }
+
+  .age-category {
+    border-left: 20px solid rgb(213, 13, 31);
+    font-size: 12px;
+    font-weight: 300;
+    bottom: 470px;
+  }
+
+  .border::after {
+    content: '';
+    border: none;
+
+  }
+
+  h1 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 5.5%;
+    padding-bottom: 9px;
+  }
+
+  .desc-flex {
+    font-size: 15px;
+    font-weight: 200;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    display: flex;
+    max-width: 100%;
+  }
+
+  .white-text {
+    font-weight: 200;
+    Font-size: 15px;
+  }
+
+  .gray-text {
+    font-weight: 200;
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 15px;
+    width: 100%;
+    padding-top: 4px;
+  }
+
+  .buttons {
+    gap: 25px;
+    padding-top: 26px;
+    padding-bottom: 27px;
+  }
+
+  .stream {
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 200;
+    width: 136px;
+    height: 32px;
+  }
+
+  .episodes {
+    border-radius: 5px;
+    width: 135px;
+    height: 32px;
+    border: 1px solid var(--main-color);
+    font-size: 11px;
+    font-weight: 200;
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  .slider-item {
+    width: 100%;
+    height: 105px;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+
+  .slider-item img {
+    width: 75px;
+    height: 105px;
+  }
+
+  .slider {
+    width: 83%;
+    padding-bottom: 20px;
+  }
+
+  body {
+    background-color: rgb(15, 21, 30);
+    padding-left: 10px;
+    background-image: none;
+  }
+
+  main {
+    background-image: url("imgs/background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .top-logo-bar {
+    padding-top: 20px;
+    flex-wrap: wrap;
+    gap: none;
+  }
+
+  .netflix-logo {
+    width: 50%;
+    height: 45%;
+  }
+
+  header {
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 14px;
+  }
+
+  .right-top-menu {
+    padding-top: 10px;
+    max-width: 100px;
+  }
+  .right-top-menu i{ 
+    padding-right: 20px;
+  }
+  .date {
+    padding-right: 30px;
+    padding-left: 0px;
+    align-self: start;
+    padding-top: 10px;
+  }
+
+  .border::before {
+    border: 0px solid var(--main-color);
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}

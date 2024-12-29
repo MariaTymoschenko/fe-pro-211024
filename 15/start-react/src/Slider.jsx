@@ -17,7 +17,6 @@ function Slider(){
     const slideNext = () => {
         if (swiperRef.current) {
             swiperRef.current.swiper.slideNext();
-            console.log("next");
         }
     };
     return (
@@ -37,7 +36,7 @@ function Slider(){
             <Swiper
           ref={swiperRef}
         slidesPerView={5}
-        spaceBetween={0}
+        spaceBetween={50}
         pagination={{
           enabled: false
 

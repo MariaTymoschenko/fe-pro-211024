@@ -1,20 +1,27 @@
-* {
+ * {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   box-sizing: border-box;
 }
 
-body {
+.slider-image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--main-color);
+ }
+
+
+ body {
   margin: 0;
   background-color: black;
   background-image: url("imgs/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding-left: 40px;
-}
+} 
 
-header {
+ header {
   color: rgb(200, 200, 200);
   font-family: var(--font-family);
   font-size: 24px;
@@ -193,8 +200,7 @@ p {
 
 main {
   width: 96%;
-}
-
+} 
 
 .slider {
   width: 57%;
@@ -203,9 +209,51 @@ main {
   flex-direction: row;
 }
 
+.slider-item {
+  width: 57%;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-bottom: 49px;
+  overflow: hidden;
+  position: relative;
+} 
+
+.slider-item img {
+  border: 1px solid var(--main-color);
+  width: 17%;
+}
+
 .navigation {
   display: flex;
   align-self: center;
+  gap: 24px;
+}
+
+.mySwiper {
+  position: relative;
+  width: 500px;
+}
+
+.slider {
+  width: 57%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
   gap: 24px;
 }
 
@@ -217,11 +265,6 @@ main {
   margin-bottom: 49px;
   overflow: hidden;
   position: relative;
-}
-
-.slider-item img {
-  border: 1px solid var(--main-color);
-  width: 17%;
 }
 
 :root {
@@ -323,28 +366,6 @@ button{
     border: 1px solid var(--main-color);
     font-size: 11px;
     font-weight: 200;
-  }
-
-  .slider {
-    width: 100%;
-  }
-
-  .slider-item {
-    width: 100%;
-    height: 105px;
-    flex-wrap: wrap;
-    gap: 25px;
-    margin-bottom: 25px;
-  }
-
-  .slider-item img {
-    width: 75px;
-    height: 105px;
-  }
-
-  .slider {
-    width: 83%;
-    padding-bottom: 20px;
   }
 
   body {
